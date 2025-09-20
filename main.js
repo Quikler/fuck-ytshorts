@@ -43,10 +43,10 @@
 
     // selectors to track for 
     // - '.ytGridShelfViewModelHost' - shorts group class
-    // - 'ytm-shorts-lockup-view-model' - shorts video element
+    // - 'ytm-shorts-lockup-view-model' - shorts video element on your search
+    // - 'ytd-rich-section-renderer' - shorts group video element on your feed
 
-    // TODO: remove initially ytd-mini-guide-entry-renderer[aria-label="Shorts"]
-    const elm = await waitForElm('.ytGridShelfViewModelHost, ytm-shorts-lockup-view-model');
+    const elm = await waitForElm('.ytGridShelfViewModelHost, ytm-shorts-lockup-view-model, ytd-rich-section-renderer');
     removeElement(elm);
   }
 })();
