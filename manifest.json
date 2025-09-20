@@ -1,0 +1,14 @@
+{
+  "manifest_version": 2,
+  "name": "fuck-ytshorts",
+  "version": "1.0",
+
+  "description": "Removes yt shorts content from your browser",
+
+  "content_scripts": [
+    {
+      "matches": ["*://*.youtube.com/*"],
+      "js": ["main.js"]
+    }
+  ]
+}
