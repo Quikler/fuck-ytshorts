@@ -45,8 +45,9 @@
     // - '.ytGridShelfViewModelHost' - shorts group class
     // - 'ytm-shorts-lockup-view-model' - shorts video element on your search
     // - 'ytd-rich-section-renderer' - shorts group video element on your feed
+    // - 'ytd-reel-shelf-renderer' - shorts in history
 
-    const elm = await waitForElm('.ytGridShelfViewModelHost, ytm-shorts-lockup-view-model, ytd-rich-section-renderer');
+    const elm = await waitForElm('.ytGridShelfViewModelHost, ytm-shorts-lockup-view-model, ytd-rich-section-renderer, ytd-reel-shelf-renderer');
     removeElement(elm);
   }
 })();
